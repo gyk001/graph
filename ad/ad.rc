@@ -1,0 +1,596 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ad.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ad.ico"
+IDR_adTYPE              ICON                    "res\\adDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 25, 24
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_MENU_ADD_VEX
+    BUTTON      ID_MENU_DEL_VEX
+    BUTTON      ID_MENU_SHOW_VEX_INFO
+    SEPARATOR
+    BUTTON      ID_MENU_ADD_ARC
+    BUTTON      ID_MENU_DEL_ARC
+    BUTTON      ID_MENU_SHOW_ARC_INFO
+    SEPARATOR
+    BUTTON      ID_Visit_ALL
+    BUTTON      ID_MENU_FIND_PATH
+    BUTTON      ID_MENU_SHORT_PATH
+    BUTTON      ID_MENU_CRITICAL_PATH
+    BUTTON      ID_MENU_CHECK_ANNULUS
+    SEPARATOR
+    BUTTON      ID_AREA_SIZE
+    BUTTON      ID_MENU_RESET_ALL_COLOR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "操作(&E)"
+    BEGIN
+        MENUITEM "添加顶点\t Ctrl+V",               ID_MENU_ADD_VEX
+        MENUITEM "删除顶点\tShift+V",               ID_MENU_DEL_VEX
+        MENUITEM "顶点属性\t  Alt+V",               ID_MENU_SHOW_VEX_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "添加弧\t Ctrl+A",                ID_MENU_ADD_ARC
+        MENUITEM "删除弧\tShift+A",                ID_MENU_DEL_ARC
+        MENUITEM "弧属性\t  Alt+A",                ID_MENU_SHOW_ARC_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "遍历序列",                        ID_Visit_ALL
+        MENUITEM "简单路径",                        ID_MENU_FIND_PATH
+        MENUITEM "最短路径",                        ID_MENU_SHORT_PATH
+        MENUITEM "关键路径",                        ID_MENU_CRITICAL_PATH
+        MENUITEM "环检查",                         ID_MENU_CHECK_ANNULUS
+        MENUITEM SEPARATOR
+        MENUITEM "重置颜色",                        ID_MENU_RESET_ALL_COLOR
+        MENUITEM "画板大小",                        ID_AREA_SIZE
+    END
+    POPUP "切换(&C)"
+    BEGIN
+        MENUITEM "十字链表",                        ID_MENU_ORTHLIST_GRAP
+        MENUITEM "深度优先生成森林",                    ID_MENU_CHILD_SIBING_TREE
+        MENUITEM "广度优先生成森林",                    ID_MENU_CHILD_SIBING_BFS_TREE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 ad(&A)...",                ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_POPUP MENU
+BEGIN
+    POPUP "操作"
+    BEGIN
+        MENUITEM "添加顶点",                        ID_MENU_ADD_VEX
+        MENUITEM "删除该点",                        ID_MENU_DEL_VEX
+        MENUITEM "顶点属性",                        ID_MENU_SHOW_VEX_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "添加弧",                         ID_MENU_ADD_ARC
+        MENUITEM "删除弧",                         ID_MENU_DEL_ARC
+        MENUITEM "弧属性",                         ID_MENU_SHOW_ARC_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "从此遍历",                        ID_MENU_VISIT_ALL
+        MENUITEM "简单路径",                        ID_MENU_FIND_PATH
+        MENUITEM "最短路径",                        ID_MENU_SHORT_PATH
+        MENUITEM "关键路径",                        ID_MENU_CRITICAL_PATH
+        MENUITEM "环检查",                         ID_MENU_CHECK_ANNULUS
+        MENUITEM SEPARATOR
+        MENUITEM "重置颜色",                        ID_MENU_RESET_ALL_COLOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_MENU_ADD_ARC,        VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_MENU_ADD_VEX,        VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_MENU_DEL_VEX,        VIRTKEY, SHIFT, NOINVERT
+    "A",            ID_MENU_DEL_ARC,        VIRTKEY, SHIFT, NOINVERT
+    "V",            ID_MENU_SHOW_VEX_INFO,  VIRTKEY, ALT, NOINVERT
+    "A",            ID_MENU_SHOW_ARC_INFO,  VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于本程序"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,18,20,20
+    LTEXT           "数据结构 - 图演示 1.0 版",IDC_STATIC,40,17,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009.7.3",IDC_STATIC,39,33,119,8
+    DEFPUSHBUTTON   "确定",IDOK,165,25,50,16,WS_GROUP
+    LTEXT           "郭玉昆 - 计科071     QQ：644655955",IDC_STATIC,12,50,170,8
+    GROUPBOX        "",IDC_STATIC,7,7,221,63
+END
+
+IDD_AD_FORM DIALOGEX 0, 0, 393, 349
+STYLE DS_SETFONT | DS_CENTER | WS_CHILD | WS_BORDER
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_ADD_VEX DIALOGEX 0, 0, 147, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加节点"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_KEY,70,14,54,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,17,96,50,14
+    LTEXT           "节点关键字",IDC_STATIC,18,18,41,8
+    EDITTEXT        IDC_MORE_INFO,17,41,116,51,ES_MULTILINE | ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,7,133,112
+    PUSHBUTTON      "取消",IDCANCLE,81,98,50,14
+END
+
+IDD_VEX_INFO DIALOGEX 0, 0, 156, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "顶点信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,19,134,50,14
+    PUSHBUTTON      "取消",IDCANCEL,87,134,50,14
+    LTEXT           "",IDC_IN,63,40,76,12
+    LTEXT           "出度",IDC_STATIC,17,60,29,8
+    LTEXT           "",IDC_OUT,63,60,76,12
+    LTEXT           "关键字",IDC_STATIC,17,18,29,8
+    LTEXT           "入度",IDC_STATIC,17,39,29,8
+    EDITTEXT        IDC_MORE_INFO,18,82,123,45,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_COMBO_KEY_LIST,62,16,71,171,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,7,142,152
+    GROUPBOX        "",IDC_STATIC,7,7,142,152
+END
+
+IDD_DIALOG_ARC_EDIT DIALOGEX 0, 0, 197, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加弧"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,63,50,14
+    PUSHBUTTON      "取消",IDCANCEL,125,63,50,14
+    EDITTEXT        IDC_1_KEY,51,17,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_2_KEY,51,41,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "  添加双向弧",IDC_CHECK_DOUBLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,45,60,10
+    LTEXT           "头节点",IDC_STATIC,18,21,25,8
+    LTEXT           "尾节点",IDC_STATIC,18,44,25,8
+    EDITTEXT        IDC_WEIGHT,131,18,49,14,ES_AUTOHSCROLL
+    LTEXT           "权值",IDC_STATIC_WEIGHT,110,20,17,8
+    GROUPBOX        "",IDC_STATIC,7,7,183,78
+END
+
+IDD_ARC_INFO DIALOGEX 0, 0, 187, 204
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "弧信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,183,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,183,50,14
+    CONTROL         "",IDC_LIST_ARC,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,173,169
+END
+
+IDD_AREA_SIZE DIALOGEX 0, 0, 186, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "调整画布大小"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,113,14,50,14
+    PUSHBUTTON      "取消",IDCANCEL,113,33,50,14
+    LTEXT           "宽度",IDC_STATIC,20,17,17,8
+    LTEXT           "高度",IDC_STATIC,21,36,17,8
+    EDITTEXT        IDC_WIDTH,53,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT,52,33,40,14,ES_AUTOHSCROLL
+    CONTROL         "  自动计算",IDC_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,57,52,10
+    GROUPBOX        "",IDC_STATIC,7,7,172,65
+END
+
+IDD_SHOW_INFO DIALOGEX 0, 0, 235, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_KEY_LIST,42,14,68,171,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DFS_OR_BFS,154,14,62,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,20,131,50,14
+    PUSHBUTTON      "取消",IDCANCEL,166,133,50,14
+    EDITTEXT        IDC_MESSAGE,17,33,199,87,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "关键字",IDC_STATIC,16,16,26,8
+    LTEXT           "遍历方式",IDC_STATIC,120,16,33,8
+    GROUPBOX        "",IDC_STATIC,7,3,221,151
+END
+
+IDD_DIALOG_SHORT_PATH DIALOGEX 0, 0, 261, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "最短路径"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_KEY,57,14,58,68,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_SHORT_PATH,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,63,247,118
+    LTEXT           "路径起点",IDC_STATIC,18,17,33,8
+    LTEXT           "提示：  双击列表框内的记录可以在图上描出选择的路径！\n  您可以在不关闭该对话框的情况下对主窗口进行任何操作！",IDC_STATIC,15,34,228,22
+    PUSHBUTTON      "最小化",IDC_BUTTON_MINI_SIZE,139,15,50,14
+    GROUPBOX        "",IDC_STATIC,7,4,247,53
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "计科071-郭玉昆"
+            VALUE "FileDescription", "数据结构-课程设计"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Grap.exe"
+            VALUE "LegalCopyright", " (C) 郭玉昆 保留所有权利。"
+            VALUE "OriginalFilename", "Grap.exe"
+            VALUE "ProductName", "数据结构-图演示"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_AD_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_DIALOG_ADD_VEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_VEX_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_DIALOG_ARC_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ARC_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_AREA_SIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_SHOW_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG_SHORT_PATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DLL
+//
+
+IDR_SKIN_DLL            DLL                     "res\\Skin.dll"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SKN
+//
+
+IDR_SKIN                SKN                     "res\\skin.skn"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_VIEW_MESSAGE        "    十字链表视图"
+    IDS_MESSAGE             "0个节点，0条弧。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "数据结构(图演示)\n\n图文档\n图文档 (*.grs)\n.grs\n文档id\nGrap.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ad"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新图\n新建"
+    ID_FILE_OPEN            "打开已有图文件\n打开"
+    ID_FILE_SAVE            "将当前图保存为文件\n保存"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息\n保存"
+    ID_APP_EXIT             "退出应用程序\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此图"
+    ID_FILE_MRU_FILE2       "打开此文图"
+    ID_FILE_MRU_FILE3       "打开此文图"
+    ID_FILE_MRU_FILE4       "打开此文图"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENU_ADD_VEX         "添加节点"
+    ID_MENU_DEL_VEX         "删除节点"
+    ID_MENU_DEL_ARC         "删除弧"
+    ID_MENU_SHOW_INFO       "显示节点信息"
+    ID_MENU_ADD_ARC         "添加弧"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SHOW_ARC_INFO        "显示弧的信息"
+    ID_MENU_SHOW_ARC_INFO   "显示弧的信息"
+    ID_MENU_SHOW_VEX_INFO   "显示节点的信息"
+    ID_32795                "调整画板大小"
+    ID_AREA_SIZE            "调整画板（不是窗口）大小"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENU_FIND_PATH       "查找两点间的一条简单路径"
+    ID_MENU_RESET_ALL_ARC_COLOR "重置所有弧为默认的颜色"
+    ID_Visit_ALL            "图的深度或广度优先遍历序列"
+    ID_MENU_VISIT_ALL       "从该节点进行深度或广度优先遍历"
+    ID_MENU_TREE            "生成森林"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENU_ORTHLIST_GRAP   "切换到十字链表视图"
+    ID_MENU_CHILD_SIBING_TREE "切换至广度优先生成森林视图"
+    ID_MENU_CHECK_ANNULUS   "检查图中是否存在环"
+    ID_MENU_CHILD_SIBING_BFS_TREE "切换至广度优先生成森林视图"
+    ID_MENU_CRITICAL_PATH   "查找AOE网的关键路径"
+    ID_MENU_SHORTWST_PATH   "查找两点之间的最短路径"
+    ID_MENU_RESET_ALL_COLOR "重置所有顶点和弧的颜色为默认值"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENU_SHORT_PATH      "查找两点之间的最短路径"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ad.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

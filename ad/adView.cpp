@@ -325,7 +325,7 @@ void CadView::UpdateMessage(int flag )
 	}
 
 }
-
+/*
 void CadView::ArrowTo( CDC* pDC,const CPoint from,const CPoint to, COLORREF clr , int PenWidth, int toRadius)
 {
 int nWidth =10;             //三角形底边宽度
@@ -390,8 +390,49 @@ int nWidth =10;             //三角形底边宽度
 	pDC->LineTo(aptPoly[0].x, aptPoly[0].y);
 	pDC->Polygon(aptPoly, 3);
 }
+*/
+void CadView::ArrowTo( CDC* pDC,const CPoint from,const CPoint to, COLORREF clr , int PenWidth, int toRadius)
+{
+	//在终点E后距离为lene_next的地方做一条垂线，交原来的向量于next点，在该垂线上两侧找两个距next点距离为lennext_two
+	//的点，将终点分别与这两个点连起来，就是一个箭头
+	int xe = to.x;
+	int ye = to.y;
+	int xs = from.x;
+	int ys = from.y; 
+	double lenarrow, a_sin, a_cos, lene_next , lennext_two;
+	lenarrow=sqrt((double)(xe-xs)*(xe-xs)+(ye-ys)*(ye-ys));//箭头长度
+	a_sin=(ye-ys)/lenarrow;//向量的sin值
+	a_cos=(xe-xs)/lenarrow;//向量的cos值
+	lene_next=18;//结束点E到后面一个定长点next的距离
+	lennext_two=8;//点next到两个箭头边的终点的距离
+	double x1,y1,x2,y2;//箭头的两个边的终点
+	//E点后面定长lene_next，在x方向就是xe-lene_next*a_cos。
+	CPoint ptnext(xe-toRadius*a_cos,ye-toRadius*a_sin);//箭头和圆边界的交点
+	CPoint ptnextnext(ptnext.x*a_cos,ptnext.y*a_sin); //箭头等腰三角形底边终点坐标
 
 
+	//找到next点后在垂线上定长为lennext_two的两个点，x方向平移，再y方向平移，做一个小的直角三角形，和向量的三角形成比例。可求出
+	//x方向上平移lennext_two*a_sin，因为sin和cos是用坐标计算的，有正负，在四个象限这个式子都通用，x,y轴也可以用。
+	TRACE("%d,%d,%d,%d\n",to.x,to.y,ptnext.x,ptnext.y);
+	x1=ptnext.x-lene_next*a_cos+lennext_two*a_sin;
+	x2=ptnext.x-lene_next*a_cos-lennext_two*a_sin;
+	y1=ptnext.y-lene_next*a_sin-lennext_two*a_cos;
+	y2=ptnext.y-lene_next*a_sin+lennext_two*a_cos;
+	
+	MoveToEx(*pDC, xs, ys, NULL);
+	CPen* pOldPen;
+	CPen pen( BS_SOLID ,PenWidth ,clr);
+	pOldPen = pDC->SelectObject(&pen);
+
+	//pDC->MoveTo(xs,ys);
+	pDC->LineTo(ptnext);
+	//pDC->MoveTo(xe,ye);
+	pDC->LineTo(x1,y1);
+	pDC->MoveTo(ptnext);
+	pDC->LineTo(x2,y2);
+
+
+}
 
 void CadView::ShowMessageBox(Status flag)
 {

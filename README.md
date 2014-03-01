@@ -47,6 +47,6 @@
  ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/06_guanjian.png)
  
  
-[exe]:https://raw.github.com/gyk001/graph/master/raw/graph.exe
+[exe]: https://github.com/gyk001/graph/raw/master/raw/graph.exe
 
-[demo]:https://raw.github.com/gyk001/graph/master/raw/demo
+[demo]: https://github.com/gyk001/graph/tree/master/raw/demo

@@ -4,9 +4,9 @@
 
 实现了关键图算法的直观展示
 
-[/raw/demo](demo)目录下为图中例子的文档
+[/raw/demo][demo]目录下为图中例子的文档
 
-[/raw/graph.exe](exe)为编译好的程序，Windows下可直接运行
+[/raw/graph.exe][exe]为编译好的程序，Windows下可直接运行
 
 ## 功能
 

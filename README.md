@@ -4,9 +4,9 @@
 
 实现了关键图算法的直观展示
 
-raw/demo/目录下为图中例子的文档
+[/raw/demo](demo)目录下为图中例子的文档
 
-raw/graph.exe为编译好的程序，Windows下可直接运行
+[/raw/graph.exe](exe)为编译好的程序，Windows下可直接运行
 
 ## 功能
 
@@ -26,16 +26,27 @@ raw/graph.exe为编译好的程序，Windows下可直接运行
 ## 截图
 
 * 十字链表视图
- ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/imag/01_shizi.png)
+ ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/01_shizi.png)
 
 * 深度优先生成森林视图
- ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/imag/02_shendu.png)
+ ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/02_shendu.png)
 
 * 广度优先生成森林视图
- ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/imag/02_guangdu.png)
+ ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/03_guangdu.png)
 
+* 简单路径
+ ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/03_jiandan.png)
 
+* 最短路径
+ ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/04_zuiduan.png)
 
+* 环
+ ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/05_huan.png)
 
+* 关键路径
+ ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/06_guanjian.png)
+ 
+ 
+[exe]:https://raw.github.com/gyk001/graph/master/raw/graph.exe
 
-
+[demo]:https://raw.github.com/gyk001/graph/master/raw/demo

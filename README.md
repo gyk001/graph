@@ -46,6 +46,15 @@
 * 关键路径
  ![十字链表视图](https://raw.github.com/gyk001/graph/master/raw/img/06_guanjian.png)
  
+
+# 同时期的其他作品
+
+* [QQ连连看外挂和模拟器](https://github.com/gyk001/QQ_LLK_Cheat#readme)
+* [数据结构图算法演示](https://github.com/gyk001/graph#readme)
+* [推箱子和地图编辑器](https://github.com/gyk001/BoxMan#readme)
+* [连连看](https://github.com/gyk001/LLK#readme)
+* [节日时钟桌面堆雪](https://github.com/gyk001/DeskSnow#readme)
+* [日语单词学习机](https://github.com/gyk001/JPWord#readme)
  
 [exe]: https://github.com/gyk001/graph/raw/master/raw/graph.exe
 
